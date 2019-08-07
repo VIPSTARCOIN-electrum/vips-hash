@@ -1,4 +1,4 @@
-from eth_hash.utils import (
+from vips_hash.utils import (
     auto_choose_backend,
 )
 

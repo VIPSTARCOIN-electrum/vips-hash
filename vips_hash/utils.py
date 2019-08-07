@@ -1,7 +1,8 @@
 import importlib
 import os
+import vips_hash.backends.pycryptodomex
 
-from eth_hash.backends import (
+from vips_hash.backends import (
     SUPPORTED_BACKENDS,
 )
 
@@ -20,7 +21,7 @@ def get_backend_in_environment():
 
 
 def load_backend(backend_name):
-    return importlib.import_module('eth_hash.backends.%s' % backend_name)
+    return importlib.import_module('vips_hash.backends.%s' % backend_name)
 
 
 def load_environment_backend(env_backend):
@@ -30,7 +31,7 @@ def load_environment_backend(env_backend):
         except ImportError as e:
             raise ImportError(
                 "The backend specified in ETH_HASH_BACKEND, '{0}', is not installed. "
-                "Install with `pip install eth-hash[{0}]`.".format(env_backend)
+                "Install with `pip install vips-hash[{0}]`.".format(env_backend)
             )
     else:
         raise ValueError(
@@ -47,7 +48,7 @@ def choose_available_backend():
             pass
     raise ImportError(
         "None of these hashing backends are installed: %r.\n"
-        "Install with `pip install eth-hash[%s]`." % (
+        "Install with `pip install vips-hash[%s]`." % (
             SUPPORTED_BACKENDS,
             SUPPORTED_BACKENDS[0],
         )

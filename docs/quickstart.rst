@@ -4,7 +4,7 @@ Quickstart
 Choose a hashing backend
 ---------------------------
 
-If you're not sure, choose "pycryptodome" because it supports pypy3.
+If you're not sure, choose "pycryptodomex" because it supports pypy3.
 
 You can find a full list of each currently supported backend in :mod:`eth_hash.backends`.
 
@@ -15,7 +15,7 @@ Put the backend you would like to use in brackets during install, like:
 
 .. code-block:: shell
 
-  pip install eth-hash[pycryptodome]
+  pip install eth-hash[pycryptodomex]
 
 Compute a Keccak256 Hash
 -----------------------------

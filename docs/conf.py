@@ -190,7 +190,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'eth_hashdoc'
+htmlhelp_basename = 'vips_hashdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -210,7 +210,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'eth_hash.tex', 'eth-hash Documentation',
+  ('index', 'vips_hash.tex', 'eth-hash Documentation',
    'Jason Carver', 'manual'),
 ]
 
@@ -240,7 +240,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'eth_hash', 'eth-hash Documentation',
+    ('index', 'vips_hash', 'eth-hash Documentation',
      ['Jason Carver'], 1)
 ]
 

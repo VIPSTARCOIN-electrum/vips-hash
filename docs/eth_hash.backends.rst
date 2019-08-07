@@ -12,10 +12,10 @@ eth\_hash\.backends\.auto module
     :undoc-members:
     :show-inheritance:
 
-eth\_hash\.backends\.pycryptodome module
+eth\_hash\.backends\.pycryptodomex module
 ----------------------------------------
 
-.. automodule:: eth_hash.backends.pycryptodome
+.. automodule:: eth_hash.backends.pycryptodomex
     :members:
     :undoc-members:
     :show-inheritance:

@@ -1,7 +1,7 @@
-from eth_hash.backends.auto import (
+from vips_hash.backends.auto import (
     AutoBackend,
 )
-from eth_hash.main import (
+from vips_hash.main import (
     Keccak256,
 )
 

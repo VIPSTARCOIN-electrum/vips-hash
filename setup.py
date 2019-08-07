@@ -26,8 +26,8 @@ extras_require={
         "ipython",
     ],
     # optional backends:
-    'pycryptodome': [
-        "pycryptodome>=3.6.6,<4",
+    'pycryptodomex': [
+        "pycryptodomex>=3.6.6,<4",
     ],
     'pysha3': [
         "pysha3>=1.0.0,<2.0.0",
@@ -42,21 +42,21 @@ extras_require['dev'] = (
 )
 
 setup(
-    name='eth-hash',
+    name='vips-hash',
     # *IMPORTANT*: Don't manually change the version here. Use `make bump`, as described in readme
     version='0.2.0',
-    description="""eth-hash: The Ethereum hashing function, keccak256, sometimes (erroneously) called sha3""",
+    description="""vips-hash: The Ethereum hashing function, keccak256, sometimes (erroneously) called sha3""",
     long_description_markdown_filename='README.md',
     author='Jason Carver',
     author_email='ethcalibur+pip@gmail.com',
-    url='https://github.com/ethereum/eth-hash',
+    url='https://github.com/VIPSTARCOIN-electrum/vips-hash',
     include_package_data=True,
     install_requires=[
     ],
     setup_requires=['setuptools-markdown'],
     python_requires='>=3.5, <4',
     extras_require=extras_require,
-    py_modules=['eth_hash'],
+    py_modules=['vips_hash'],
     license="MIT",
     zip_safe=False,
     keywords='ethereum',
